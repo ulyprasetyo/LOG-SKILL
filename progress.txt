@@ -1,0 +1,9 @@
+### 2026-05-31
+- **Created**: progress.txt - Initial log file creation
+
+### 2026-06-01
+- **Modified**: [BE/Controller] Api_Tendik.php - Mengubah response individu_get() agar mengembalikan data berpaginasi (results, total, limit, offset)
+- **Modified**: [FE/Lib] src/lib/api.ts - Menambahkan interface TendikListData untuk representasi data paginasi dari backend
+- **Modified**: [FE/Hook] src/hooks/useApi.ts - Menyesuaikan hook useTendikList untuk menggunakan properti results dari response API
+- **Modified**: [FE/Page] src/app/tenaga-pendidik/page.tsx - Menyesuaikan pengambilan data paginasi, memperbaiki relasi jenjang/jabatan dari sync_dapeg, merapikan lebar kolom jabatan, dan menerapkan client-side pagination (20 data per halaman)
+- **Modified**: [Config] .agents/skills/log-skill/SKILL.md - Memperbarui aturan logging agar mendukung pengelompokan stack Next.js/CI3
